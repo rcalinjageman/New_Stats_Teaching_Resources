@@ -1,0 +1,28 @@
+Survey of College Attitudes
+
+This is data from survey of college students.  The survey was put together as a classroom project, and measures a number of different constructs.  Note that not all participants elected to answer all items--blanks represent  scales that were not completed by that particiapnt.
+
+
+* ID  - 
+* Gender :  Self-reported gender, Male or Female
+* Gender_Code:  1 for Female, 2 for Male
+* Age: Self-reported age in years
+* School_Year - Self reported, First-year, sophomore, junior, senior, or post-bac
+* School_Year_Code: 1 = first-year, 2 = sophomore,3 = junior, 4 = senior, 5 = post-bac
+* Transfer: No if student did not transfer to current school, Yes if student transferred to current school
+* Transfer_Code: 0 = not a transfer student, 1 = transfer student
+* Student_Athlete: self-reported, non-athlete, or athlete in or out of season
+* Student_Athlete_Code: 0 = not a student athlete, 1 = student athlete
+* Wealth_SR:  Single item: "Considering all the others students you've met here at SCHOOL NAME how would you rank yourself in terms of wealth?" rated on scale from 1 (well below average) to 5 (well above average)
+* GPA: Self-reported GPA, 0-4point scale
+* ACT: Self-reported ACT score
+* Subjective_Well_Being: Average of 5-item satisfaction with life scale by Deiner, rated on scale from 1 (strongly disagree) to 7 (strongly agree).  Sample item: "I am satisfied with my life".  See http://internal.psychology.illinois.edu/~ediener/SWLS.html
+* Positive_Affect: Average of 10-item scale of frequency of experiencing positive emotions over the past week, rated on a scale from 1 (verly slightly to not at all) to 5 (extremely).  Sample items: Enthusiastic, Proud, Inspired...Part of the PANAS scale.
+* Negative_Affect : Average of 10-item scale of frequency of experiencing negative emotions over the past week.  Rated on scale from 1( very slightly to not at all) to 5 (extrmely).  Sample items: Nervous, irritable, hostile, etc>0.  Part of the PANAS scale. See http://booksite.elsevier.com/9780123745170/Chapter%203/Chapter_3_Worksheet_3.1.pdf 
+* Relationship_Confidence-   Average of a 7-item scale of confidence in having romantic relationships, rated on a scale from 1 (not at all characteristic of me) to 5 (very characteristic of me).  Sample item: "I am a good partner for a romantic relationship)
+* Exercise  - Exercise score on the Godin Leisure-Time Exercise Quetionnaire.  This asks participants to rate how often during a regular week they engage in strenuous, moderate, or light exercise.   A total score is calculated as 9*strenuous + 5*moderate + 3*light.  See http://dapa-toolkit.mrc.ac.uk/documents/en/God/Godin_Leisure-Time_Exercise_Q.pdf
+* Academic_Motivation_Intrinsic   - Average score on 6-item measure of intrinsic acadmic motivation.  Participants respond to the prompt "Why do you go to college" and respond to each item with a rating from 1 (does not correpond at all) to 7 (corresponds exactly).  Sample item: "For the intense feelings I experience when I am communicating my own ideas to others".  See http://www.er.uqam.ca/nobel/r26710/LRCS/scales/emec_en.doc
+* Academic_Motivation_Extrinsic  - Average score on 7-item measure of extinsic acadmic motivation.  Participants respond to the prompt "Why do you go to college" and respond to each item with a rating from 1 (does not correpond at all) to 7 (corresponds exactly).  Sample item: "Because with only a high-school degree I would not find a high-paying job later one".  See http://www.er.uqam.ca/nobel/r26710/LRCS/scales/emec_en.doc
+* Academic_Motivation_Amotivation   - Average score on 2-item measure of extinsic acadmic motivation.  Participants respond to the prompt "Why do you go to college" and respond to each item with a rating from 1 (does not correpond at all) to 7 (corresponds exactly).  Sample item: "Honestly, I don't know; I really feel that I am wasting my time in school.".  See http://www.er.uqam.ca/nobel/r26710/LRCS/scales/emec_en.doc
+* Inteligence_Value  - Measure of degree to which participant values intelligence, rated on a scale from 1 (strongly agree) to 5 (strongly agree).  Sample item: "Intelligence greatly contributes to success in life.".  See 
+* Raven_Score - % correct out of 8 items on the Raven Progressive Matrix Scale, a scale of logical thinking/IQ.   Adapted from https://www.raventest.net/.  

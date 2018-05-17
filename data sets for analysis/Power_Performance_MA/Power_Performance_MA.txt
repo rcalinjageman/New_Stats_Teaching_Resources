@@ -1,0 +1,28 @@
+To what extent can feeling powerful improve your performance?
+
+To find out, Burgmer and Englich (2012) manipulated power by:
+* Asking participants to recall either a nuetral memory or a time when they had power over others (Experiment 1)
+* Asking participants to complete a word search where the words were either neutral or related to power (Experiment 2)
+
+Next, participants were asked to perform a motor task: either golf (Experiment 1) or darts (Experiment 2).  In both studies, participants primed to feel powerful performaed substantially better than the control group.  This study was conducted in Germany.
+
+Cusack et al. (2015) conducted a series of replications in the U.S. to better understand how much power might affect performance.  In addition to a close replication of Burgmer & Englich's first study (Experiment 1) they tried a number of variations.  Specifically, they tried different ways of manipulating power (memory and word-search), different types of tasks (golf, mirror tracing, and a cognitive word-production task),  different sample types (online or undergrads), and different difficulties (normal or hard).  
+
+* Country -- if the study was conducted in Germany (in German) or the U.S. (in English)
+* Country_Code - 1 = US, 2 = Germany
+* Sample - if the sample was drawn from an undergrad populaiton or from an online site
+* Sample_Code - 1 = Undergrad, 2 = Online
+* Difficulty - if the task was of normal difficulty or high difficulty
+* Difficulty_code - 1 = normal, 2 = difficult
+* Manipulation - if power was manipulated by memory recall or by word search
+* Manipulation_Code - 1 = memory, 2 = word search
+* DVType - if the dependent variable was a motor task or a cognitive task
+* DV - If the dependent variable was golf, darts, mirror-tracing, or word production
+* Study - name of the study
+* M_control - mean for the control group
+* SD_control - SD for the control group
+* M_power - mean for the power group
+* SD_power - SD for the power group
+* Cohen d - standardized effect size difference comparing control to power groups where positive numbers indicater an advantage for the power group.
+* N_control - sample size for control grop
+* N_power - sample size for power group

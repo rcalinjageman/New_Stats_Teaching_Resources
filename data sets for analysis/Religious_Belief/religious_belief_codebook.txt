@@ -1,0 +1,18 @@
+Study of religious beliefs
+
+This is a subset of data from a study of religious belief.  
+
+* Response_ID
+* Belief_in_Gd - Participants were asked "How strongly do you believe in God (from 0-100)? To clarify, if you are certain that God does not exist, please put "0" and if you are certain that God does exist, then put "100" ".  This column reports responses in numeric format.
+* Age - self-reported age
+
+
+
+
+This is a subset of data from an attempt to replicate Study 2 of Gervais & Norenzayan (2012).  
+*Note: All data points were from participants in the Thinker condition.
+
+
+The replication publication is still in development, but project details are here:  https://osf.io/qc6rh/
+The questions from this survey were taken from: 
+Gervais, W. M., & Norenzayan, a. (2012). Analytic Thinking Promotes Religious Disbelief. Science, 336(6080), 493–496. doi:10.1126/science.1215647

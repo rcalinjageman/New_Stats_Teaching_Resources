@@ -1,0 +1,22 @@
+Survey of College Attitudes
+This is data from survey of college students.  The survey was put together as a classroom project, and measures a number of different constructs.  Note that not all participants elected to answer all items--blanks represent  scales that were not completed by that particiapnt.
+
+* ID  - 
+* Gender :  Self-reported gender, Male or Female
+* Gender_Code:  1 for Female, 2 for Male
+* Age: Self-reported age in years
+* Wealth_SR:  Single item: "Considering all the others students you've met here at  SCHOOL NAME how would you rank yourself in terms of wealth?" rated on scale from 1 (well below average) to 5 (well above average)
+* School_Year - Self reported, First-year, sophomore, junior, senior, or post-bac
+* School_Year_Code: 1 = first-year, 2 = sophomore,3 = junior, 4 = senior, 5 = post-bac
+* Transfer: No if student did not transfer to current school, Yes if student transferred to current school
+* Transfer_Code: 0 = not a transfer student, 1 = transfer student
+* GPA: Self-reported GPA, 0-4point scale
+* Subjective_Well_Being: Average of 5-item satisfaction with life scale by Deiner, rated on scale from 1 (strongly disagree) to 7 (strongly agree).  Sample item: "I am satisfied with my life".  See http://internal.psychology.illinois.edu/~ediener/SWLS.html
+* Positive_Affect: Average of 10-item scale of frequency of experiencing positive emotions over the past week, rated on a scale from 1 (verly slightly to not at all) to 5 (extremely).  Sample items: Enthusiastic, Proud, Inspired...Part of the PANAS scale.
+* Negative_Affect : Average of 10-item scale of frequency of experiencing negative emotions over the past week.  Rated on scale from 1( very slightly to not at all) to 5 (extrmely).  Sample items: Nervous, irritable, hostile, etc>0.  Part of the PANAS scale. See http://booksite.elsevier.com/9780123745170/Chapter%203/Chapter_3_Worksheet_3.1.pdf 
+* Academic_Engagement - Average of 5-item scale of academic work, measured on  scale from 1 ((0 hours per week) to 8 (more than 30 hours a week).  Sample items "Studying for class" "Reading, writing, doing homework", etc.
+* Religious_Meaning - Average of 6-item scale in belief in a meaning to life based on religious ideas.  Rated on a scale from 1 (Strongly Disagree) to 4 (Strongly Agree) with sample items "G-d put me in this life for a purpose" and "G-d has a specific plan for my life."
+* Health  - Average of 4-item scale of health rating from 1 (Definately false) to 5 (definately true) for statements such as "I am a s healthy as anybody I know" and "My health is excellent"
+* Emotional_Recognition - % Correct on a 20-item test of recognizing different facial expressions.  Scored out of number attempted, as many participants abandoned the survey during this test due to its length.  See http://greatergood.berkeley.edu/ei_quiz/#1
+
+

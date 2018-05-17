@@ -1,0 +1,14 @@
+Data from:  
+Brethel-Haurwitz, K. M., & Marsh, A. a. (2014). Geographical differences in subjective well-being predict extraordinary altruism. Psychological Science, 25(3), 762–71. doi:10.1177/0956797613516148 
+
+* Data extracted from Figure 1 using: http://arohatgi.info/WebPlotDigitizer/app/ 
+
+Reported:
+State: full name of state
+Abbreviation: Abbreviated name of state
+Well_Being_2010: From Gallup Poll, 2010, Ranges from 0-100 (I think)
+Kidney_Rate: Rate of non-directed kidney donation (# donations/total state population) from 1999-2010 
+Well_Being_2013: From Gallup Poll, 2013, Pulled from Gallup Website, not part of original paper
+Kidney_Rate, per 1,000,000:
+WB Change 2013-2010:
+

@@ -1,0 +1,18 @@
+Self-explaining is a study strategy where students explain material to themselves as they learn.  McEldoon, Durkin & Rittle-Johnson examined the benefits of self-explaining for grade school students learning math.  
+
+Students first took a pre-test for conceptual knowledge, then studied, then took a post-test for conceptual knowledge.  
+
+Some students were randomly assigned to normal study, others to self-explain.  However, self-explaining takes longer than traditional study, so a third set of children completed regular study + additional practice.  
+
+Data from all 3 conditions is proivded here, graciously shared by the authors.  The scores are % correct on each phase of testing.  There were additional measures made in this study that are not in this simplified data set.
+
+McEldoon, K. L., Durkin, K. L., & Rittle-Johnson, B. (2013). Is self-explanation worth the time? A comparison to additional practice. The British Journal of Educational Psychology, 83(4), 615–32. doi:10.1111/j.2044-8279.2012.02083.x
+
+
+StudentID: 
+Condition: the condition that a student was placed in, can be normal studying, self-explaining, and additional practice.
+Condition_Code: 1 = normal study, 2 = self-explain, 3 = additional practice
+Grade: student grade level
+Pretest: Student score on pretest
+Posttest: Student score on posttest
+Difference: posttest - pretest

@@ -1,0 +1,32 @@
+Location, M_male , SD_male ,N_male, M_female , SD_female ,N_female,Subset,Subset_Code,Country
+abington, 0.080 , 0.463 ,24, 0.454 , 0.466 ,53,USA,1,USA
+brasilia, 0.400 , 0.516 ,48, 0.570 , 0.423 ,65,Not_USA,0,Brazil
+charles, 0.340 , 0.453 ,22, 0.735 , 0.419 ,58,Not_USA,0,Czech Republic
+conncoll, 0.359 , 0.410 ,29, 0.577 , 0.464 ,57,USA,1,USA
+csun, 0.313 , 0.489 ,16, 0.320 , 0.506 ,72,USA,1,USA
+help, 0.259 , 0.440 ,28, 0.341 , 0.435 ,69,Not_USA,0,Malaysia
+ithaca, 0.275 , 0.558 ,17, 0.560 , 0.457 ,71,USA,1,USA
+jmu, 0.102 , 0.542 ,30, 0.515 , 0.489 ,137,Not_USA,0,VA
+ku, 0.110 , 0.421 ,41, 0.511 , 0.491 ,64,Not_USA,0,Turkey
+laurier, 0.169 , 0.440 ,49, 0.581 , 0.410 ,59,Not_USA,0,Canada
+lse, 0.161 , 0.483 ,91, 0.522 , 0.453 ,176,Not_USA,0,UK
+luc, 0.097 , 0.460 ,20, 0.482 , 0.450 ,121,USA,1,USA
+mcdaniel, 0.252 , 0.537 ,20, 0.553 , 0.457 ,71,USA,1,USA
+msvu, 0.448 , 0.542 ,9, 0.638 , 0.478 ,52,Not_USA,0,Canada
+mturk, 0.332 , 0.468 ,410, 0.586 , 0.454 ,484,USA,1,USA
+osu, 0.116 , 0.415 ,30, 0.370 , 0.420 ,60,USA,1,USA
+oxy, 0.265 , 0.529 ,32, 0.584 , 0.514 ,85,USA,1,USA
+pi, 0.322 , 0.499 ,427, 0.613 , 0.439 ,809,USA,1,USA
+psu, 0.180 , 0.462 ,15, 0.464 , 0.512 ,74,USA,1,USA
+qccuny, 0.195 , 0.567 ,19, 0.354 , 0.486 ,74,USA,1,USA
+qccuny2, (0.095), 0.637 ,4, 0.235 , 0.216 ,4,USA,1,USA
+sdsu, 0.224 , 0.485 ,38, 0.466 , 0.547 ,117,USA,1,USA
+swps, 0.367 , 0.394 ,25, 0.515 , 0.331 ,51,Not_USA,0,Poland
+swpson, 0.238 , 0.514 ,53, 0.508 , 0.434 ,112,Not_USA,0,Whole Internet
+tamu, 0.236 , 0.451 ,58, 0.420 , 0.465 ,121,USA,1,USA
+tamuc, 0.278 , 0.435 ,15, 0.559 , 0.424 ,69,USA,1,USA
+tamuon, 0.222 , 0.555 ,45, 0.286 , 0.523 ,163,USA,1,USA
+tilburg, 0.429 , 0.485 ,20, 0.485 , 0.548 ,58,Not_USA,0,Netherlands
+ufl, 0.032 , 0.547 ,31, 0.419 , 0.555 ,94,USA,1,USA
+unipd, 0.113 , 0.462 ,48, 0.468 , 0.476 ,86,Not_USA,0,Italy
+,,,,,,,,,

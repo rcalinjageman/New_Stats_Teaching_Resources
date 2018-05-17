@@ -1,0 +1,18 @@
+Two different studies of influences on our moral attitudes
+
+Some researchers believe that moral judgements are based not only on rational considerations but on one's current emotional state.  To what extent can recent emotional experiences influence moral judgements?  Schnall et al. (2008) examined this question by manipulating feelings of cleanliness and purity and then observing if this changes how harshly participants judged the morality of others.  In Study 1, Schnall et al. (2008) asked participants to complete a word scramble task with either neutral words (neutral priming) or words related to cleanliness (cleanliness prime).  All students then completed completed a set of moral judgements about controversial scenarios (Moral_judgement - average of all 6 items, each rated on a scale fom 0-9).  The data from this study is on the left.
+
+After publication of this study, Cheung, Donnellan & Johnson (20014) attempted a close replication, using the same manipulaiton and the same measure of moral judgement. 
+
+* Participant - an ID number for  the participant
+* condition_code -- 0 = neutral priming were unscrambled, 1 = clean priming (clean-related words were unscambled)
+* Moral_Judgements - average of moral judgement scale, 6 items, all ranked from 0-9
+
+
+The data from the original study is available online at:   https://osf.io/4cs3k/  
+and is Study 1 from:
+Schnall, S., Benton, J., & Harvey, S. (2008). With a Clean Conscience: Cleanliness Reduces the Severity of Moral Judgments. Psychological Science, 19(12), 1219–1222. http://doi.org/10.1111/j.1467-9280.2008.02227.x
+
+The data from the replicaiton is available online at:  https://osf.io/apidb/  and is Study 1 from:
+Johnson, D. J., Cheung, F., & Donnellan, M. B. (2014). Does cleanliness influence moral judgments?: A direct replication of Schnall, Benton, and Harvey (2008). Social Psychology, 45(3), 209–215. doi:10.1027/1864-9335/a000186
+[[Note that this a cleaned up version of the online dataset--all participants excluded for various reasons (e.g. experimenter error) have been deleted.]]

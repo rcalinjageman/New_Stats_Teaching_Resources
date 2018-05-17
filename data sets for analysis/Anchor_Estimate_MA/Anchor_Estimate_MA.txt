@@ -1,0 +1,38 @@
+ManyLabs 1: Meta-analysis of replications of classic anchor/adjust effect.
+
+To what extent does the wording of a question influence one's judgement?  This data investigates a specific type of wording influence: a numerical anchor.  Participants were asked to estimate three different quantities (number of babies born in the U.S. each day; population of Chicago; height of Mounter Everest).  For each question, though, participants were either given a low or high numerical anchor (see below).  For example, they were told either that the number of babies born in the U.S. was more than 200,000 (low anchor) or less than 5,000,000 (high anchor).  The question is: to what extent does having a low or high anchor in mind influence the estimate made?
+
+This dataset provides summaries for  30 of the 36 different labs that tried to replicate this classic effect.  This is the data for the estimated number of babies born/day in the U.S.:
+
+* Location - name of the lab
+* M_lowanchor - mean for those given the low anchor
+* SD_lowanchor - SD of the low anchor group
+* N_lowanchor - sample size of ht elow anchor group
+* M_highanchor - mean for those given the high anchor
+* SD_highanchor - SD of the high anchor group
+* N_highanchor - sample size of the high anchor group
+* Subset - if the study was conducted in the USA or not
+* Subset_Code - 0 = not USA, 1 = USA
+* Country - country where study was conducted
+
+[[scroll to the right to see a table of study locations from Klein et al. (2014).
+Data has been omitted from these sites: uva vcu wisc wku wl wpi ]]
+
+
+Anchors:
+Babies:
+Low: More than 100 babies are born per day in the United States. How many babies do you think are born in the U.S. each day?   
+High: Less than 50,000 babies are born per day in the United States. How many babies do you think are born in the U.S. each day? 
+Population:
+Low: The population of Chicago is more than 200,000. What do you think the population of Chicago is?  
+High: The population of Chicago is less than 5,000,000. What do you think the population of Chicago is?  
+Everest:
+High: Mount Everest is shorter than 45,500 feet. How tall do you think Mount Everest is?  
+Low: Mount Everest is taller than 2,000 feet.  How tall do you think Mount Everest is?  
+
+
+This is data is available online at https://osf.io/wx7ck/ from this study:
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating Variation in Replicability. Social Psychology, 45(3), 142–152. http://doi.org/10.1027/1864-9335/a000178
+
+The original study exploring this effect is:
+Jacowitz, K. E., & Kahneman, D. (1995). Measures of Anchoring in Estimation Tasks. Personality and Social Psychology Bulletin, 21(11), 1161–1166. http://doi.org/10.1177/01461672952111004

@@ -1,0 +1,9 @@
+This data is real data collected in an online survey of college students conducted by students in an upper-level seminar on happiness.  
+
+Reported here is:
+  Gender : Male or Female
+  Gender_Code: 1 = female, 2 = male
+   GPA: 4 point scale
+  Commuter:  0 = resident, 1 = commuter
+  SWB - Subjective Well Being - Average from 5-item SWB scale by Diener, scale from 1-5
+  Campus Invovlement - Average of 8-item scale of campus involvement, scale from 1-5.

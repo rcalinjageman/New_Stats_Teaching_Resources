@@ -1,0 +1,21 @@
+To what extent does the label on a beverage influence your enjoyment of the beverage?  To find out, participants were asked to take part in a taste-test for grape juice.  Each participant was poured 3 samples of grape juice:  one from a bottle of Welch's Grape Fruit (a mid-level brand), one from a bottle of Generic Grape Fruit (a low-price brand), and one from a bottle of Whole Foods Organic Grape Juice (a high-priced brand).  The trick was: it was all the same grape juice!  Prior to the start of the project, the experimenters had poured out the original contents and poured the same Welch's grape juice into each bottle.   
+
+After each sample, participants rated their enjoyment of that juice (scale from 1 to 10).  They also reported how much they would pay for a 1 gallon bottle of that juice ($1-10, whole dollar amounts).  Finally, participants completed a funelled debreifing about the study--participants who expressed some suspicion that all the juices were actually the same are marked with a 1, the rest a 0.
+
+This is a simplified dataset which contains data for only 2 of the 3 juice labels: Organic and Generic.
+
+* ParticipantID -
+* Enjoy_Generic - degree of enjoyment of the juice sample with the Generic label, 1-10
+* Enjoy_Organic - degree of enjoyment of the juice sample with the Organic label, 1-10
+* Pay_Generic - price willing to pay for the with  the Generic label, marked as $1-10 dollars in whole dollar amounts
+* Pay_Organic - price willing to pay for the with  the Organic label, marked as $1-10 dollars in whole dollar amounts
+* suspicious - 1 = participant expressed suspicion that juices were the same, 0 = participant expressed no suspicion
+
+
+
+This research was conducted as a student research project by:
+   Sylvia Floretta-Schiller, Barbar Berent, and Gabriela Salinas -- Dominican University, Psychology
+
+And was inspired by this study:
+Robinson, T. N., Borzekowski, D. L. G., Matheson, D. M., & Kraemer, H. C. (2007). Effects of Fast Food Branding on Young Children’s Taste Preferences, 161(8), 792–797.
+

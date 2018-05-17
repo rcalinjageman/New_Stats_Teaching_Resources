@@ -1,0 +1,15 @@
+Wholesome food and wholesome morals? - Original Study and Close Replication
+
+Do organic foods make us morally smug?  To what extent?  To find out, Eskine (2013) asked participants to rate images of organic food, neutral (control) food, or comfort food.  Next, all participants completed a moral judgements scale in which they read different moral scenarios and judged how wrong they were (scale of 1-7).    You can see examples of the different food images below.
+
+Summary data from Eskine (2013) is in the table on the top left.  The primary research questions were:
+* Does judgmentalness increase after organic food exposure compared to control food.
+* Does judgementalness decrease after comfort food exposure compared to control food.
+
+Raw data from a close replication (Moery & Calin-Jageman, 2016) is just below the summary table.  The same research questions were asked in the close replication.  This data was retrieved from: https://osf.io/atkn7/
+
+This data is from:
+
+Eskine, K. J. (2013). Wholesome Foods and Wholesome Morals?: Organic Foods Reduce Prosocial Behavior and Harshen Moral Judgments. Social Psychological and Personality Science, 4(2), 251–254. doi:10.1177/1948550612447114
+
+Moery, E., & Calin-Jageman, R. J. (2016). Direct and Conceptual Replications of Eskine (2013): Organic Food Exposure Has Little to No Effect on Moral Judgments and Prosocial Behavior. Social Psychological and Personality Science, 7(4), 312–319. doi:10.1177/1948550616639649

@@ -1,0 +1,28 @@
+To what extent do emotional responses alter heart rate?  To find out,  participants were asked to recall memories of intense happiness or anger.  Heart rate was measured using a cell phone app in beats per minute.   Heart rate was measured for each participant before emotion recall (HR_baseline), during anger recall (HR_anger), and during happiness recall (HR_happiness).   The order of emotion recall was counterbalanced.    
+
+As a manipulation check, participants also rated how intensely they were able to feel each emotion during the recall task on a scale  from 0 (absolutely not intense) to 8 (extremely intense) .
+
+This is a simplified dataset that has data only for baseline and anger.  The data for happiness is not included here.
+
+* ID 
+* First_emotion - anger or happiness, determined by coin flip
+* First_Emotion_code - anger = 1, happiness = 2
+* HR_baseline - heart rate measured in beats per minute during baseline period prior to emotion recall
+* HR_anger - heart rate measured in beats per minute during recall of times of intense anger
+* SR_anger - self-reported intensity of feeling angry during angry recall, scale from 0-8
+
+[[Note participants who had missing heart rate data due to data collection errors have been deleted]]
+
+This data is from: 
+Lakens, D. (2013). Using a Smartphone to Measure Heart Rate Changes during Relived Happiness and Anger. IEEE Transactions on Affective Computing, 4(2), 238–241. doi:10.1109/T-AFFC.2013.3
+
+And it is available online at: 
+https://data.3tu.nl/download/uuid:ab52261c-206b-4bed-a59d-026a16c04144/
+
+This original experiment that inspired this conceptual replication is:
+
+Ekman, P., Levenson, R. W., & Friesen, W. V. (1983). Autonomic nervous system activity distinguishes among emotions. Science (New York, N.Y.), 221(4616), 1208–1210. doi:10.1126/science.6612338
+
+
+
+

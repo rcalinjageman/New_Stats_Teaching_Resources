@@ -1,0 +1,13 @@
+This is a holdout sample of an additional 10 cases from the HOUSES dataset from https://wiki.csc.calpoly.edu/datasets/wiki/Houses
+
+In addition, this table shows asking price predicted from size based on the regression equation from the initial dataset (first tab), residual of prediction, and square of the residual of prediction.
+
+New case: identifying number of house
+Size: size of house in square meters
+Y:
+Lower 95% PI: Lower value of predicted price range
+Higher 95% PI: Upper value of predicted price range
+Actual Asking Price: Notes the actual asking price of the house
+Within PI: Notes whether the actual asking price of the house falls within the prediction interval
+Residual: 
+ResS:

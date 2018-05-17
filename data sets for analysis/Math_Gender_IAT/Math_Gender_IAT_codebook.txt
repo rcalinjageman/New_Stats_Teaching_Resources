@@ -1,0 +1,24 @@
+ManyLabs 1: Replication of gender difference in impliciat attitudes about math.  
+
+To what extent is gender related to implicit attitudes about bias.  To find out, Nosek and colleagues as male and female students to complete an Implicit Association Test (IAT) that measured how easily negative ideas could be connected to art or to mathematics.  The data shown here records the participants gender and their IAT score.  In this case, positive scores indicate an easier time linking negative ideas with mathematics, negative scores indicate an easier time linking positive ideas with mathematics.  
+
+
+The data here is from 2 different labs (ithaca and sdsu), both part of a large-scale collaboration in which the same studies were run in multiple labs all over the world.
+
+* SessionID - just an anonymous identifier for that participant
+* Location - the lab that collected the data (Ithaca or SDSU)
+* Location_Code -- 1 = Ithaca, 2 = SDSU
+* Gender - male or female
+* Gender code -- 1 = female, 2 = male
+* IAT_Score - the score on the IAT test, where higher scores represent stronger negative bias towards math and negative scores represent stronger negative bias towards art.
+
+[[Note: all participants collected who had to be excluded due to high error rates or slow responses have already been deleted from this file]]
+
+
+This is data is available online at https://osf.io/wx7ck/ and is from one replication site (Ithaca) of this study:
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating Variation in Replicability. Social Psychology, 45(3), 142–152. http://doi.org/10.1027/1864-9335/a000178
+
+The original study to investigate this effect is:
+Nosek, B. a, Banaji, M. R., & Greenwald, A. G. (2002). Math = male, me = female, therefore math not = me. Journal of Personality and Social Psychology, 83(1), 44–59. http://doi.org/10.1037/0022-3514.83.1.44
+
+

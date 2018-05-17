@@ -1,0 +1,36 @@
+ManyLabs 1: Replication of classic anchor/adjust effect.
+
+To what extent does the wording of a question influence one's judgement?  This data investigates a specific type of wording influence: a numerical anchor.  Participants were asked to estimate three different quantities (number of babies born in the U.S. each day; population of Chicago; height of Mounter Everest).  For each question, though, participants were either given a low or high numerical anchor (see below).  For example, they were told either that the number of babies born in the U.S. was more than 200,000 (low anchor) or less than 5,000,000 (high anchor).  The question is: to what extent does having a low or high anchor in mind influence the estimate made?
+
+* sessionID - 
+* location - lab that ran the study
+* babies_anchor -- "low anchor" (100) or "high anchor" (50,000)
+* babies_code -- 1 = low anchor, 2 = high anchor
+* babies_est - participant's estimate of # babies born/day
+* chicago_anchor - "low anchor" (200,00) or "high anchor" (5,000,000)
+* chicago_code -- 1 = low anchor, 2 = high anchor
+* chicago_est - participant's estimate of population of Chicago
+* everest_anchor - "low anchor" (2,000 feet) or "high anchor" (45,500 feet)
+* everest_code -- 1 = low anchor, 2 = high anchor
+* everest_est - participant's estimate of height of Everest (in feet)
+
+
+Anchors:
+Babies:
+Low: More than 100 babies are born per day in the United States. How many babies do you think are born in the U.S. each day?   
+High: Less than 50,000 babies are born per day in the United States. How many babies do you think are born in the U.S. each day? 
+
+Population:
+Low: The population of Chicago is more than 200,000. What do you think the population of Chicago is?  
+High: The population of Chicago is less than 5,000,000. What do you think the population of Chicago is?  
+
+Everest:
+High: Mount Everest is shorter than 45,500 feet. How tall do you think Mount Everest is?  
+Low: Mount Everest is taller than 2,000 feet.  How tall do you think Mount Everest is?  
+
+
+This is data is available online at https://osf.io/wx7ck/ and is from one replication site (Ithaca) of this study:
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating Variation in Replicability. Social Psychology, 45(3), 142–152. http://doi.org/10.1027/1864-9335/a000178
+
+The original study exploring this effect is:
+Jacowitz, K. E., & Kahneman, D. (1995). Measures of Anchoring in Estimation Tasks. Personality and Social Psychology Bulletin, 21(11), 1161–1166. http://doi.org/10.1177/01461672952111004

@@ -1,0 +1,4 @@
+This is a fake dataset!
+
+This data shows self-reported typicall hours of nightly sleep (0 to 12) and rated level of attractiveness (scale from 1-10).
+

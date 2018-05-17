@@ -1,0 +1,25 @@
+ManyLabs 1: Replication of flag priming and conservatism
+
+To what extent can subtle cues influence political attitudes?  In this study, participants were asked to look at photos to estimate the time of day they were taken.  For some participants, 2 of the 4 photos were of the U.S.A. flag ("flag prime").  For the rest, all 4 photos were of neutral objects ("no prime").  
+
+Next, for what seemed like an unrelated study, participants completed a short 8-item questionairre about political beliefs (each rated on a scale from 1-7, where higher numbers represent more conservative attitudes). 
+
+The research question is: to what extent does flag exposure alter political attitudes?
+
+This is summary data from a number of different labs which attempted to replicate this project.  The data is for U.S. labs only, as priming wih the U.S. flag may not have the same effect in other countries:
+* Location - lab that ran the study
+* M_flagprimed - average conservatism for flag-primed group (average of 8-item scale of political conservatism (1-7): low scores indicate liberal attitudes, high scores indicate conservative attitudes. )
+* M_neutralprimed - average conservatism for the neutral primed group
+* SD_flagprimed - SD for flag-primed group
+* SD_neutralprimed - SD for neutral-primed group
+* N_flagprimed - sample size for flag-primed group
+* N_neutralprimed - sample size for neutral-primed group
+
+[[All quality control exclusions were applied prior to producing this summary, only USA sites conducted this study]]
+
+This is data is available online at https://osf.io/wx7ck/ and is from one replication this study:
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams ., R. B., Bahník, Š., Bernstein, M. J., … Nosek, B. A. (2014). Investigating Variation in Replicability. Social Psychology, 45(3), 142–152. http://doi.org/10.1027/1864-9335/a000178
+The original study to investigate this effect is:
+Carter, T. J., Ferguson, M. J., & Hassin, R. R. (2011). A Single Exposure to the American Flag Shifts Support Toward Republicanism up to 8 Months Later. Psychological Science?: A Journal of the American Psychological Society / APS, 22(8), 1011–1018. http://doi.org/10.1177/0956797611414726
+
+

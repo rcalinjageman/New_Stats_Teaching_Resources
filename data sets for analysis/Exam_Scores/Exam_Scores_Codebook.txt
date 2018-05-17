@@ -1,0 +1,1 @@
+This is a set of exam scores from students in an introductory psychology course.    Student IDs are fake, but the data is real.  Scores are expressed as a %, where 0 = no correct and 100 = all correct.
