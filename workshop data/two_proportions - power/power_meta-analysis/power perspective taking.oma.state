@@ -1,0 +1,54 @@
+(dp0
+S'NAME'
+p1
+I1
+sS'current_outcome'
+p2
+VEgocentric Response
+p3
+sS'current_time_point'
+p4
+I0
+sS'RAW_DATA'
+p5
+(lp6
+I3
+aI4
+aI5
+aI6
+asS'OUTCOMES'
+p7
+(lp8
+I7
+aI8
+aI9
+asS'study_auto_added'
+p9
+I6
+sS'HEADERS'
+p10
+(lp11
+S'include'
+p12
+aS'study name'
+p13
+aS'year'
+p14
+asS'conf_level'
+p15
+F95.0
+sS'YEAR'
+p16
+I2
+sS'current_txs'
+p17
+(lp18
+S'Grp A'
+p19
+aS'Grp B'
+p20
+asS'current_effect'
+p21
+S'OR'
+p22
+s.
