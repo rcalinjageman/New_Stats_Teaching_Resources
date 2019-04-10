@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1554924294340.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "38D9B641",
+    "lastKnownWriteTime" : 1554921292,
+    "last_content_update" : 1554921292,
+    "path" : "V:/MPA Workshop/two groups - tempt_fate/tfate meta-analysis.R",
+    "project_path" : "tfate meta-analysis.R",
+    "properties" : {
+        "cursorPosition" : "125,66",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,126 @@
+# This script conducts a meta-analysis the tempting fate replication from ManyLabs 2
+# Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Adams, R. B., Alper, S., … Nosek, 
+#   B. A. (2018). Many Labs 2: Investigating Variation in Replicability Across 
+#   Samples and Settings. Advances in Methods and Practices in Psychological Science, 1(4), 443–490. 
+#   http://doi.org/10.1177/2515245918810225
+# See the companion script for full details on where the data comes from
+# The goal in this script is to make a nice forest plot showing each site's dat and overall meta-analysis
+
+
+#Load needed libraries
+
+library(ggplot2)
+library(psych)
+library(dplyr)
+library(metafor)
+library(tidyr)
+
+#Conduct a meta-analysis of the tempting fate data
+
+#Load the data
+tfate <- read.csv("Risen_1_study_global_include_all_CLEAN_CASE.csv")
+
+#First, get summary stats for each site
+#Currently, doing this by using the summarize function and then spread, one column at a time
+#Probably better ways, but oh well
+  # This groups the tempting fate data by source and condition
+  tfate <- group_by(tfate, source, factor)
+  #This summarizes group means and then makes a crosstab
+  fsummary <- summarize(tfate, m=mean(variable,na.rm=T))
+  names(fsummary)[2] <- "mean"
+  ftable <- spread(fsummary, mean, m, sep="_")
+  #This summarizes by count and then adds this to the crosstab
+  fsummary <- summarize(tfate, count=n())
+  names(fsummary)[2] <- "N"
+  ftable <- cbind(ftable, spread(fsummary, N, count, sep="_"))
+  fsummary <- summarize(tfate, s=sd(variable,na.rm=T))
+  #Finally, summarize by sd and add to the crosstab
+  names(fsummary)[2] <- "sd"
+  ftable <- cbind(ftable, spread(fsummary, sd, s, sep="_"))
+  #Clean up repeated source columns from this silly approach
+  ftable$source1 <- NULL
+  ftable$source2 <- NULL
+  
+  #Now caluclate effect size and expected variance for each site
+  ftable <- escalc(measure="SMD", m2i=mean_Prepared, sd2i=sd_Prepared, n2i=N_Prepared, m1i=mean_Unprepared,sd1i=sd_Unprepared,n1i=N_Unprepared,data=ftable)
+
+  #Now here's the overall meta-analysis
+  fmeta <- rma(yi, vi, data=ftable, knha=TRUE)
+
+  #This is really kludgey, but let's get Cohen's d and CI for each site to make our own forst plot
+  #This caluclates a matrix of cohen's ds values and CIs, one for each site
+  #Technically, the cohen.d.by function should make this easier, but it kept not working
+  cds <- d.ci(ftable$yi, n1=ftable$N_Prepared, n2=ftable$N_Unprepared)
+  #Now we're saving the lower and upper bounds to the summary table
+  ftable <- cbind(ftable, cds[, 1])
+  ftable <- cbind(ftable, cds[, 3])
+  #And then renaming the columns with the info
+  ftable$dlower <- ftable$`cds[, 1]`
+  ftable$dupper <- ftable$`cds[, 3]`
+
+  #Now lets label sites by many sites captured the overall meta-analysis effect size
+  overallmeta <- fmeta$b[,1]
+  ftable$captures <- ftable$dlower < overallmeta
+  ftable$captures <- ftable$dupper > overallmeta
+  
+  #And let's also label by statistical significance at alpha = .05 (boo!)
+  ftable$sig <- ftable$dlower > 0
+    
+  #Reverse the order of the sources... ggplot seems to plot in reverse?
+  ftable$source <- factor(ftable$source, levels=c("Overall", " ", rev(levels(ftable$source))))
+  
+  #Add a row to our table with the overall meta-analysis
+  ftable_end <- nrow(ftable)+1
+  ftable[ftable_end, "source"] <- " "   #Spacer row
+  ftable_end <- ftable_end + 1
+  ftable[ftable_end, "yi"] <- overallmeta
+  ftable[ftable_end, "dlower"] <- fmeta$ci.lb
+  ftable[ftable_end, "dupper"] <- fmeta$ci.ub
+  ftable[ftable_end, "source"] <- "Overall"
+  ftable[ftable_end, "captures"] <- "NA"
+  ftable[ftable_end, "sig"] <- "NA"
+  
+
+  #Now we make a custom scatterplot
+  myplot <- ggplot(data = ftable, aes(y=source, x = yi, color = captures, shape=sig))
+  myplot <- myplot + theme_classic()
+  myplot <- myplot + scale_color_manual(values = c("red", "darkslategrey", "darkslategrey"))
+  myplot <- myplot + scale_shape_manual(values = c(16, 18, 8))
+  myplot <- myplot + theme(legend.position="none")
+  myplot <- myplot + geom_point(size=2)  
+  myplot <- myplot + geom_errorbarh(data=ftable, aes(xmin=ftable$dlower, xmax = ftable$dupper), size=1, height = 0)
+  myplot <- myplot + geom_segment(color = "black", linetype = "dotted", aes(x=0, xend=0,y = 1, yend=ftable_end))
+  myplot <- myplot + geom_segment(color = "black", linetype = "dashed", aes(x=overallmeta, xend=overallmeta,y = 1, yend=ftable_end))
+  myplot <- myplot + xlab("Cohen's d and 95% CI\nTempting Fate Replications\nManyLabs 2")
+  myplot <- myplot + ylab("Collection Site")
+  myplot  
+  ggsave("tfatema_capture.png", width=5, height=7, units="in")
+  
+  myplot <- ggplot(data = ftable, aes(y=source, x = yi, shape=sig))
+  myplot <- myplot + theme_classic()
+  myplot <- myplot + scale_color_manual(values = c("red", "darkslategrey", "darkslategrey"))
+  myplot <- myplot + scale_shape_manual(values = c(16, 18, 8))
+  myplot <- myplot + theme(legend.position="none")
+  myplot <- myplot + geom_point(size=2)  
+  myplot <- myplot + geom_errorbarh(data=ftable, aes(xmin=ftable$dlower, xmax = ftable$dupper), size=1, height = 0)
+  myplot <- myplot + geom_segment(color = "black", linetype = "dotted", aes(x=0, xend=0,y = 1, yend=ftable_end))
+  myplot <- myplot + geom_segment(color = "black", linetype = "dashed", aes(x=overallmeta, xend=overallmeta,y = 1, yend=ftable_end))
+  myplot <- myplot + xlab("Cohen's d and 95% CI\nTempting Fate Replications\nManyLabs 2")
+  myplot <- myplot + ylab("Collection Site")
+  myplot  
+  ggsave("tfatema_base.png", width=5, height=7, units="in")
+  
+  
+  myplot <- ggplot(data = ftable, aes(y=source, x = yi, color=sig, shape=sig))
+  myplot <- myplot + theme_classic()
+  myplot <- myplot + scale_color_manual(values = c("darkslategrey", "darkslategrey", "darkgoldenrod1"))
+  myplot <- myplot + scale_shape_manual(values = c(16, 18, 8))
+  myplot <- myplot + theme(legend.position="none")
+  myplot <- myplot + geom_point(size=2)  
+  myplot <- myplot + geom_errorbarh(data=ftable, aes(xmin=ftable$dlower, xmax = ftable$dupper), size=1, height = 0)
+  myplot <- myplot + geom_segment(color = "black", linetype = "dotted", aes(x=0, xend=0,y = 1, yend=ftable_end))
+  myplot <- myplot + geom_segment(color = "black", linetype = "dashed", aes(x=overallmeta, xend=overallmeta,y = 1, yend=ftable_end))
+  myplot <- myplot + xlab("Cohen's d and 95% CI\nTempting Fate Replications\nManyLabs 2")
+  myplot <- myplot + ylab("Collection Site")
+  myplot  
+  ggsave("tfatema_winnercurse.png", width=5, height=7, units="in")
